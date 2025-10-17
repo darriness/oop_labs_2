@@ -54,31 +54,6 @@ Four::Four(const std::string& String) {
     }
 }
 
-// Four::Four(const std::string& String) {
-//     std::string s = String;
-
-//     // A. Обработка пустой строки или строки из одних нулей
-//     size_t non_zero_start = s.find_first_not_of('0');
-//     if (non_zero_start != std::string::npos) {
-//         s = s.substr(non_zero_start);
-//     } else {
-//         s = "0"; // Если строка пустая или "0", "00", то она становится "0"
-//     }
-
-//     arraySize = s.size();
-//     array = new unsigned char[arraySize];
-
-//     for (size_t i = 0; i < arraySize; ++i){
-//         if (!check(s[i])) { // Проверяем очищенную строку 's'
-//             delete[] array;
-//             array = nullptr;
-//             arraySize = 0;
-//             throw std::invalid_argument("digit < 0 or > 3");
-//         }
-//         // Записываем в обратном порядке: array[0] = s.back()
-//         array[i] = (s[arraySize - 1 - i]);
-//     }
-// }
 
 
 //copying
